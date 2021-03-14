@@ -1,0 +1,44 @@
+.cart {
+  width: 1000px;
+  margin: 100px auto 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.cart__title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+}
+
+.cart__total-price {
+  color: rgba(0, 0, 0, 0.54);
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.cart__total-price__ammount {
+  color: rgba(0, 0, 0, 0.87);
+  margin-left: 5px;
+  font-size: 24px;
+}
+
+@media (max-width: 1000px) {
+  .cart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    box-sizing: content-box;
+  }
+  .cart__title {
+    display: flex;
+    justify-content: center;
+  }
+}
+

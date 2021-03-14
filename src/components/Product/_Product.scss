@@ -1,0 +1,118 @@
+.product {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: white;
+  margin-bottom: 10px;
+  list-style: none;
+  padding: 20px 20px 10px 20px;
+}
+.product__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0 10px 0;
+}
+.product__main__title {
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  word-wrap: break-word;
+  max-width: 60%;
+}
+.product__main__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 300px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.counter__wrapper {
+  display: flex;
+  align-items: center;
+}
+.counter__button {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  background-color: transparent;
+  border: none;
+  color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+  outline: none;
+  font-size: 25px;
+  padding: 4px 0;
+}
+.counter__plus {
+  font-weight: 300;
+}
+.counter__button--disabled {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: rgba(0, 0, 0, 0.28);
+  font-size: 25px;
+  padding: 4px 0;
+  pointer-events: none;
+}
+.counter__quantity {
+  cursor: default;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  padding: 3px 9px;
+  margin: 0 8px;
+}
+.cost {
+  font-size: 24px;
+  font-weight: 700;
+}
+.cost__currency {
+  top: -0.5em;
+  font-size: 0.6em;
+}
+
+.product__additional {
+  border-top: 1px solid #e0e0e0;
+}
+.product__additional__wrapper {
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.product__additional__ammount {
+  display: flex;
+  max-width: 75%;
+  padding-right: 15px;
+  word-wrap: break-word;
+  align-items: center;
+}
+
+.product__additional__total-price{
+  white-space: nowrap;
+}
+
+@media (max-width: 1000px) {
+  .product__main {
+    flex-direction: column;
+  }
+  .product__main__title {
+    margin-bottom: 10px;
+    max-width: 95%;
+    word-wrap: break-word;
+  }
+  .product__main__wrapper {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
